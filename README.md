@@ -175,21 +175,3 @@ Use a python version < 13.3 to run Airflow.
 
 ## Conclusion 
 The Spotify Global Top 50 ETL project serves as an excellent example of how data engineering techniques can transform raw data into meaningful insights, providing a robust framework for music data analysis.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

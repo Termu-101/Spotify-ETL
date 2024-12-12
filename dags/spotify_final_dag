@@ -13,7 +13,6 @@ from sqlalchemy import create_engine
 from spotify_etl import spotify_etl
 
 
-
 default_args = {
     'owner': 'airflow',
     'depends_on_past': False,
@@ -21,27 +20,6 @@ default_args = {
     #'retries': 1,
     #'retry_delay': date.timedelta(minutes=1)
 }
-
-
-# def ETL():
-#     print("started")
-#     load_df=spotify_etl()
-#     #print(df)
-#     conn = BaseHook.get_connection('postgre_sql')
-#     engine = create_engine(f'postgresql://{conn.login}:{conn.password}@{conn.host}:{conn.port}/{conn.schema}')
-#     conn2 = engine.connect()
-#     # df.to_sql('my_played_tracks', engine, if_exists='replace')
-    
-
-#     load_df[0].to_sql('top50tracks', con=conn2,index=False, if_exists='append')
-#     load_df[2].to_sql('track_count_per_artist', con=conn2,index=False, if_exists='append')
-#     #load_df[1].to_sql('artist_info', con=conn2,index=False, if_exists='append')
-#     conn3 = psycopg2.connect(f'postgresql://{conn.login}:{conn.password}@{conn.host}:{conn.port}/{conn.schema}')
-#     conn3.autocommit = True
-#     cursor = conn3.cursor()
-#     insert_query = f'''INSERT INTO artist_info(artist_name,artist_ID,total_followers,genres,image_url,popularity) VALUES 
-#         {','.join([str(i) for i in list(load_df[1].to_records(index=False))])} ON CONFLICT (artist_ID) DO NOTHING;'''
-#     cursor.execute(insert_query)
 
 import traceback
 import logging

@@ -144,13 +144,13 @@ Setting up the airflow:
 2. Then Create a Connection
 Then create a connection.
 
-Connection id: postgre_sql 
-Connection Type: Postgres
-Host: Postgres
-Schema: airflow - database name (Vary depeneding on your database name)
-Login: airflow
-Password: airflow
-Port: 5432
+        Connection id: postgre_sql 
+        Connection Type: Postgres
+        Host: Postgres
+        Schema: airflow - database name (Vary depeneding on your database name)
+        Login: airflow
+        Password: airflow
+        Port: 5432
 
 3. Now it is time to deploy.
 
